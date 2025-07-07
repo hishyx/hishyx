@@ -1,220 +1,102 @@
-<style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  body {
-    background: #fff;
-    color: #333;
-    scroll-behavior: smooth;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #fff;
-    border-bottom: 2px solid #4b4b4b;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
-    color: #4b4b4b;
-  }
-
-  nav {
-    display: flex;
-    gap: 1.5rem;
-  }
-
-  nav a {
-    color: #555;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  nav a:hover {
-    color: #4b4b4b;
-  }
-
-  .menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #4b4b4b;
-  }
-
-  .container {
-    max-width: 1000px;
-    margin: auto;
-    background: #fafafa;
-    padding: 2rem;
-    border-radius: 1rem;
-    margin-top: 2rem;
-    box-shadow: 0 0 20px rgba(0,0,0,0.05);
-  }
-
-  .profile {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .profile img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #4b4b4b;
-  }
-
-  h2 {
-    border-left: 5px solid #4b4b4b;
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    margin-top: 2.5rem;
-    color: #4b4b4b;
-  }
-
-  .tagline {
-    font-size: 1.1rem;
-    font-weight: 300;
-    margin-top: 0.5rem;
-    color: #777;
-  }
-
-  ul li {
-    list-style: none;
-    margin: 0.5rem 0;
-  }
-
-  a {
-    color: #4b4b4b;
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 768px) {
-    nav {
-      display: none;
-      flex-direction: column;
-      background-color: #fff;
-      position: absolute;
-      right: 2rem;
-      top: 60px;
-      padding: 1rem;
-      border-radius: 0.5rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hisham | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
-
-    nav.show {
-      display: flex;
+    body {
+      background-color: #081460;
+      color: #f0f0f0;
+      line-height: 1.6;
     }
-
-    .menu-toggle {
-      display: block;
+    header, section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
     }
-  }
-
-  .section-reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease-in-out;
-  }
-
-  .section-reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-</style>
-
+    header {
+      text-align: center;
+      background-color: #0a192f;
+      border-bottom: 3px solid #64ffda;
+      padding-bottom: 2rem;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #64ffda;
+    }
+    h1 {
+      font-size: 2rem;
+      color: #64ffda;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #64ffda;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: square;
+      margin-left: 1.5rem;
+    }
+    .project {
+      margin-bottom: 1.5rem;
+    }
+    .contact a {
+      color: #64ffda;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+    section {
+      background-color: #0c1a6c;
+      border-radius: 12px;
+      margin-top: 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Hisham</h1>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="nav-links">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <div class="profile section-reveal">
-      <img src="profilepic.jpeg" alt="Hisham Profile">
-      <div>
-        <h1>Hisham Valiyapeediakkal</h1>
-        <p class="tagline">Aspiring MERN Stack Developer | Beginner Java Coder | Brocamp Student</p>
-      </div>
+    <img src="profilepic.jpeg" alt="Hisham Profile" />
+    <h1>Hisham Valiyapeediakkal</h1>
+    <p>Aspiring MERN Stack Developer | Beginner Java Coder | Brocamp Student</p>
+  </header>  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m an ambivert with a deep sense of care for the people I love, and a quiet drive to build something meaningful. Currently learning Java and exploring GUI with Swing, preparing to enter Brocamp’s full stack developer program.</p>
+  </section>  <section id="skills">
+    <h2>Tech Skills</h2>
+    <ul>
+      <li>Java (Core + Swing)</li>
+      <li>HTML & CSS</li>
+      <li>JavaScript (Basics)</li>
+      <li>Git & GitHub</li>
+      <li>MERN Stack (Learning)</li>
+      <li>C/C++ (Basics)</li>
+    </ul>
+  </section>  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <strong>MiniCalculator</strong>: A colorful GUI calculator built with Java Swing.
     </div>
-
-    <div class="section-reveal" id="about">
-      <h2>About Me</h2>
-      <p>I’m an ambivert with a deep sense of care for the people I love, and a quiet drive to build something meaningful. Currently learning Java and exploring GUI with Swing, preparing to enter Brocamp’s full stack developer program.</p>
+    <div class="project">
+      <strong>Basic CLI Java Apps</strong>: Covering arrays, OOPs, loops, etc.
     </div>
-
-    <div class="section-reveal" id="skills">
-      <h2>Tech Skills</h2>
-      <ul>
-        <li>Java (Core + Swing)</li>
-        <li>HTML & CSS</li>
-        <li>JavaScript (Basics)</li>
-        <li>Git & GitHub</li>
-        <li>MERN Stack (Learning)</li>
-        <li>C/C++ (Basics)</li>
-      </ul>
-    </div>
-
-    <div class="section-reveal" id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li><strong>MiniCalculator:</strong> A colorful GUI calculator built with Java Swing.</li>
-        <li><strong>Basic CLI Java apps:</strong> Covering arrays, OOPs, loops, etc.</li>
-      </ul>
-    </div>
-
-    <div class="section-reveal" id="contact">
-      <h2>Contact</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:hishamvpf@gmail.com">hishamvpf@gmail.com</a></li>
-        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/hishyx_" target="_blank">@hishyx_</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hisham-valiyapeediakkal-16a081352" target="_blank">Hisham Valiyapeediakkal</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById('nav-links').classList.toggle('show');
-    }
-
-    const reveals = document.querySelectorAll('.section-reveal');
-    const revealOnScroll = () => {
-      const windowHeight = window.innerHeight;
-      reveals.forEach(section => {
-        const top = section.getBoundingClientRect().top;
-        if (top < windowHeight - 100) {
-          section.classList.add('visible');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', revealOnScroll);
-    window.addEventListener('load', revealOnScroll);
-  </script>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:hishamvpf@gmail.com">hishamvpf@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/hishyx_" target="_blank">@hishyx_</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/hisham-valiyapeediakkal" target="_blank">Hisham Valiyapeediakkal</a></p>
+  </section>
 </body>
 </html>
