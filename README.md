@@ -6,7 +6,7 @@ Building backend systems, full-stack applications and products that solve real p
 
 📍 Kerala, India
 
-[Portfolio](YOUR_PORTFOLIO_URL) · [LinkedIn](YOUR_LINKEDIN_URL) · [Email](mailto:hishyx.dev@gmail.com)
+[Portfolio](https://hishamvaliyapeediakkal.vercel.app) · [LinkedIn](https://www.linkedin.com/in/hishamvaliyapeediakkal) · [Email](mailto:hishyx.dev@gmail.com)
 
 ---
 
@@ -59,4 +59,4 @@ Independent product in development, focused on school academic operations.
 
 - Email: hishyx.dev@gmail.com
 - GitHub: [@hishyx](https://github.com/hishyx)
-- Portfolio: YOUR_PORTFOLIO_URL
+- Portfolio: hishamvaliyapeediakkal.vercel.app
